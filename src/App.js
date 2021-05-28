@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar'
 import BookList from './components/BookList'
 import ThemeContext from './contexts/ThemeContext'
+import ThemeButton from './components/ThemeButton'
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <ThemeContext>
           <Navbar/>
           <BookList/>
+          <ThemeButton/>
       </ThemeContext>
     </div>
   );
