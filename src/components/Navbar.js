@@ -8,8 +8,8 @@ class Navbar extends Component {
     
     render() { 
         return (
-            <AuthContext.Consumer>{ (authContext) => {
-                const {isAuth, toggleAuth} = authContext
+            <AuthContext.Consumer>{ (AuthContext) => {
+                const {isAuth, toggleAuth} = AuthContext
                 return (
                     <ThemeContext.Consumer>{(ThemeContext) => {
                         const {isLightTheme, light , dark } = ThemeContext;
